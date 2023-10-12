@@ -1,0 +1,10 @@
+[carrion]
+
+[database]
+database_url = "mysql://root:@localhost:3306/example"
+
+[rules]
+orphans = [
+    { name = "books_without_authors", model = "book", parent = "author", model_foreign_key = "author_id", parent_key = "id", resolution = "log" },
+    { name = "profiles_without_users", model = "profile", parent = "user", model_foreign_key = "user_id", parent_key = "id", resolution = "delete" }
+]

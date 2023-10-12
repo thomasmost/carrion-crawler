@@ -1,0 +1,7 @@
+[workspace]
+
+members = [
+    "carrion-crawler",
+    "config",
+    "dbam",
+]

@@ -1,0 +1,10 @@
+[package]
+name = "dbam"
+version = "0.1.0"
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+config = { path = "../config" }
+diesel = { git = "https://github.com/diesel-rs/diesel", features = ["mysql", "extras", "chrono", "r2d2"] }
